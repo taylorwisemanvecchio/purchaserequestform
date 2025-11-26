@@ -167,11 +167,18 @@ const messageFromUnknownError = (e: unknown): string => {
 };
 
 // ---- Helpers (no `any`, no external types needed) ----
-type PnpItemAddResult = { data?: { Id?: number; ID?: number } };
+type PnpItemAddResult = {
+  data?: { Id?: number; ID?: number; id?: number };
+  Id?: number;
+  ID?: number;
+  id?: number;
+};
 
 const getItemIdFromAddResult = (ar: PnpItemAddResult): number | undefined => {
+  // Check all possible locations where PnP JS might return the ID
+  // depending on version and configuration
   const d = ar?.data;
-  return d?.Id ?? d?.ID;
+  return d?.Id ?? d?.ID ?? d?.id ?? ar?.Id ?? ar?.ID ?? ar?.id;
 };
 
 // Escape single quotes for OData filter strings
