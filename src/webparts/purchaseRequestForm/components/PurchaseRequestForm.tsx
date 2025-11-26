@@ -516,15 +516,18 @@ const PurchaseRequestForm: React.FC<IPurchaseRequestFormProps> = (props) => {
        throw new Error("New vendor was created but its ID could not be determined.");
      }
 
+     // At this point, finalId is guaranteed to be a number
+     const vendorId: number = finalId;
+
      // Update dropdown options & select the new vendor
      setVendorOptions(prev => {
        const vendorOption: IVendorOption = {
-         key: finalId,
+         key: vendorId,
          text: newVendorAddr.trim()
            ? `${title} — ${newVendorAddr.trim()}`
            : title,
          data: {
-           id: finalId,
+           id: vendorId,
            address: newVendorAddr,
            website: newVendorWebsite,
          },
@@ -532,9 +535,9 @@ const PurchaseRequestForm: React.FC<IPurchaseRequestFormProps> = (props) => {
        return [...prev, vendorOption];
      });
 
-     setVendorKey(finalId);
+     setVendorKey(vendorId);
 
-     return finalId;
+     return vendorId;
    };
 
   const uploadFiles = async (headerId: number): Promise<void> => {
