@@ -1,0 +1,18 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "plusBeta": false,
+    "isCreatingSolution": true,
+    "nodeVersion": "18.19.1",
+    "sdksVersions": {},
+    "version": "1.21.1",
+    "libraryName": "purchase-request",
+    "libraryId": "ab9a4da5-4be0-4dfb-8d07-193973bfa3bb",
+    "environment": "spo",
+    "packageManager": "npm",
+    "solutionName": "purchase-request",
+    "solutionShortDescription": "purchase-request description",
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "componentType": "webpart"
+  }
+}

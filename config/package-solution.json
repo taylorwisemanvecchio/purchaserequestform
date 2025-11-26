@@ -1,0 +1,40 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "purchase-request-client-side-solution",
+    "id": "ab9a4da5-4be0-4dfb-8d07-193973bfa3bb",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.21.1"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "purchase-request description"
+      },
+      "longDescription": {
+        "default": "purchase-request description"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "purchase-request Feature",
+        "description": "The feature that activates elements of the purchase-request solution.",
+        "id": "901ac49e-8448-4e73-8cb8-a494a89e2784",
+        "version": "1.0.0.0"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/purchase-request.sppkg"
+  }
+}
