@@ -122,6 +122,7 @@ const COST_CENTERS: IDropdownOption[] = [
   { key: "6020-Apex-Survey", text: "6020 Apex - Survey" },
   { key: "6030-Apex-Admin", text: "6030 Apex – Admin" },
   { key: "6050-Apex-SUE", text: "6050 Apex – SUE" },
+  { key: "6120-Charlotte-Survey", text: "6120 Charlotte – Survey" },
   { key: "6130-Charlotte-Admin", text: "6130 Charlotte – Admin" },
   { key: "6150-Charlotte-SUE", text: "6150 Charlotte – SUE" },
 ];
