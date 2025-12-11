@@ -271,7 +271,7 @@ const PurchaseRequestForm: React.FC<IPurchaseRequestFormProps> = (props) => {
           key: v.Id,
           text: v.Address ? `${v.Title} — ${v.Address}` : v.Title,
           data: { id: v.Id, address: v.Address, website: v.Website },
-        }));
+        })).sort((a, b) => a.text.localeCompare(b.text));
         setVendorOptions(opts);
       } catch (e) {
         setMessage({ type: MessageBarType.error, text: `Failed to initialize: ${messageFromUnknownError(e)}` });
@@ -533,7 +533,7 @@ const PurchaseRequestForm: React.FC<IPurchaseRequestFormProps> = (props) => {
            website: newVendorWebsite,
          },
        };
-       return [...prev, vendorOption];
+       return [...prev, vendorOption].sort((a, b) => a.text.localeCompare(b.text));
      });
 
      setVendorKey(vendorId);
