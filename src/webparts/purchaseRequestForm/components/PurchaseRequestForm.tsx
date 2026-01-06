@@ -49,7 +49,7 @@ const DEPT_MANAGER_MAP: DeptRow[] = [
   { office: "MLT",       department: "Engineering",    email: "vecchio@taylorwiseman.com",   name: "Gary Vecchio" },
   { office: "MLT",       department: "Survey",         email: "previtera@taylorwiseman.com", name: "Sam Previtera" },
   { office: "MTL",       department: "Admin",          email: "kane@taylorwiseman.com",      name: "Patrick Kane" },
-  { office: "MTL",       department: "Transportation", email: "dmoore@taylorwiseman.com",    name: "Dennis Moore" },
+  { office: "MTL",       department: "Transportation", email: "kemps@taylorwiseman.com",     name: "Dave Kemps" },
   { office: "MLT",       department: "SUE",            email: "taylor@taylorwiseman.com",    name: "Adam Taylor" },
   { office: "MTL",       department: "Geospatial",     email: "kane@taylorwiseman.com",      name: "Patrick Kane" },
   { office: "Blue Bell", department: "Engineering",    email: "thompson@taylorwiseman.com",  name: "Mark Thompson" },
